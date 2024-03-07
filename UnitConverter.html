@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Unit Converter</title>
+</head>
+<body>
+    <h1>Unit Converter</h1>
+    <label for="inputValue">Enter Value:</label>
+    <input type="text" id="inputValue"><br>
+    <button onclick="convert('cmToMeter')">cm to Meter</button>
+    <button onclick="convert('meterToCm')">Meter to cm</button>
+    <button onclick="convert('meterToKm')">Meter to km</button>
+    <button onclick="convert('kmToMeter')">km to Meter</button>
+    <button onclick="convert('celsiusToFahrenheit')">Celsius to Fahrenheit</button><br>
+    <div id="result"></div>
+
+    <script>
+        function convert(conversionType) {
+            var inputValue = parseFloat(document.getElementById('inputValue').value);
+            if (isNaN(inputValue)) {
+                alert("Please enter a valid number.");
+                return;
+            }
+            var result;
+            switch (conversionType) {
+                case 'cmToMeter':
+                    result = inputValue / 100;
+                    break;
+                case 'meterToCm':
+                    result = inputValue * 100;
+                    break;
+                case 'meterToKm':
+                    result = inputValue / 1000;
+                    break;
+                case 'kmToMeter':
+                    result = inputValue * 1000;
+                    break;
+                case 'celsiusToFahrenheit':
+                    result = (inputValue * 9/5) + 32;
+                    break;
+                default:
+                    alert("Invalid conversion type");
+                    return;
+            }
+            document.getElementById('result').innerHTML = "Result: " + result.toFixed(2);
+        }
+    </script>
+</body>
+</html> 

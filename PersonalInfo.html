@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    section {
+      padding: 50px;
+      margin-bottom: 30px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      color: #333;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    #tools-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #skill-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  .skill { 
+      flex: 0 0 calc(5% - 20px); 
+      margin-right: 20px;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+    
+    .project {
+      flex: 0 0 calc(33.33% - 20px);
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+</style>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Danish Firhan's Portfolio</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="https://drive.google.com/file/d/1YJD8FH53FcGogldWFUQNryFhEtFpS9iS/view?usp=sharing" target="_blank">Download CV</a></li>
+      <li><a href="https://www.linkedin.com/in/danish-firhan-204155292/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/danishfirhan" target="_blank">GitHub</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <p>This is where I showcase my projects, skills and where you can get to know me more</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="https://media.licdn.com/dms/image/D5603AQErRoxhJMF_Cw/profile-displayphoto-shrink_800_800/0/1706204323309?e=2147483647&v=beta&t=OkahZ5_W1sipmEqnjC9TICoxlyQIGH3-yTVHHQknguo" alt="Personal Image">
+    <img src="https://play-guitars.com/wp-content/uploads/2019/03/electric-guitar-for-beginners-01.jpg" alt="Guitar Image">
+    <img src="https://files.selecthealth.cloud/api/public/content/257685-Headphones_blog_sm.jpg" alt="Music Image">
+    <img src="https://assets.entrepreneur.com/content/3x2/2000/20160628101609-Coding.jpeg" alt="Coding Image">
+    <p><p>My name is <strong>Danish Firhan</strong>. I'm 20 years old and I am from Shah Alam, Selangor</a></p>
+    <p>I study <em>Diploma in Computer Science</em> at <a href="https://utmspace.edu.my/">UTMSPACE Kuala Lumpur</a> , I'm in Section 39 and my matric number is A22DW0721</p>
+    <p>Some of my hobbies include coding, going to local gigs, listening to music, watching movies, and learning guitar.</p>
+  </section>
+
+<section id="skills">
+        <h1 style="font-size: 36px;"><img src="https://png.pngtree.com/png-vector/20230412/ourmid/pngtree-key-skills-line-icon-vector-png-image_6703008.png" alt="Skills icon" style="width: 50px; height: 50px;"> Skills</h1> 
+        <p>Here are some of my coding skills:</p>
+        <div id="skill-list">
+            <div class="skill">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill">
+                <h3>Java</h3>
+            </div>
+            <div class="skill">
+                <h3>MySQL</h3>
+            </div>
+            <div class="skill">
+                <h3>C++</h3>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+        </div>
+    </div>
+    <p>You can view some examples of projects that I've created using HTML, CSS and JavaScript in the <a href=#tools> tools </a>section below</p><br><br>
+    <p>And here are some of my personal skills:</p>
+    <div id="skill-list">
+        <div class="skill">
+            <h3>Communication</h3>
+        </div>
+        <div class="skill">
+            <h3>Problem Solving</h3>
+        </div>
+        <div class="skill">
+            <h3>Teamwork</h3>
+        </div>
+        <div class="skill">
+            <h3>Time Management</h3>
+        </div>
+        <div class="skill">
+            <h3>Adaptability</h3>
+        </div>
+        <div class="skill">
+            <h3>Project Management</h3>
+        </div>
+</section>
+
+<section id="tools"> 
+    <h2 style="font-size: 36px;">
+        <img src="https://static.vecteezy.com/system/resources/previews/000/646/759/non_2x/vector-tools-icon-symbol-sign.jpg" alt="Tools Icon" style="width: 50px; height: 50px;"> 
+        <a href="Tools.html" target ="_blank">Tools</a>
+    </h2>
+    <p>Here are some tools I've created that you can use:</p>
+    <div id="tools-list">
+        <div class="project">
+            <h3 style="font-size: 30px;"><img src="https://cdn.jim-nielsen.com/ios/512/calculator-2017-10-10.png" style="width: 50px; height: 50px;"> Calculator</h3>
+            <p>A simple calculator for basic arithmetic operations.</p>
+            <a href="calculator.html" target ="_blank">View Calculator</a>
+        </div>
+        <div class="project">
+            <h3 style="font-size: 30px;"><img src="https://cdn-icons-png.flaticon.com/512/10476/10476452.png" style="width: 50px; height: 50px;">BMI Calculator</h3>
+            <p>A tool to calculate Body Mass Index (BMI).</p>
+            <a href="BMI_Calculator.html" target ="_blank">View BMI Calculator</a>
+        </div>
+        <div class="project">
+            <h3 style="font-size: 30px;"><img src="https://play-lh.googleusercontent.com/HMN2xx11saj-MMCJTihCnxYvCVIlzetLR6GB8QCkjzPbct0lHW5tgFye9jdR0rx_bROD=w240-h480-rw" style="width: 50px; height: 50px;">Zakat Calculator</h3>
+            <p>A calculator to determine the amount of Zakat to be paid.</p>
+            <a href="ZakatCalculator.html" target ="_blank">View Zakat Calculator</a>
+        </div>
+        <div class="project">
+            <h3 style="font-size: 30px;"><img src="https://iptmod.com/wp-content/uploads/2020/05/new_Unit_Converter-Premium-v2.2.06-Mod_iptmod.com__launcher_.png" style="width: 50px; height: 50px;">Unit Converter</h3>
+            <p>A tool to convert between different units of measurement.</p>
+            <a href="UnitConverter.html" target ="_blank">View Unit Converter</a>
+        </div>
+    </div>
+</section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" cols="50"></textarea> <br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Danish Firhan's Portfolio</p>
+</footer>
+
+<script>
+ document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the default form submission
+  
+    // code to send the data to a server 
+    //logs the form data to the console
+    const formData = new FormData(this);
+    const formDataObject = {};
+    formData.forEach((value, key) => {
+      formDataObject[key] = value;
+    });
+    console.log(formDataObject);
+  
+    // Clear the form fields after submission
+    this.reset();
+  });
+  
+ 
+  </script>
+</body>
+</html>

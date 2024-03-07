@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <script> 
+            function calculate(whichButton){
+                let no1 = parseInt(document.getElementById("no1").value);
+                let no2 = parseInt(document.getElementById("no2").value);
+                let total = 0;
+                let operator = "";
+                if(whichButton.value == "+"){
+                    operator = "+";
+                    total = no1 + no2;
+                }
+                else if(whichButton.value == "-"){
+                    operator = "-";
+                    total = no1 - no2;
+                }
+                else if(whichButton.value == "*"){
+                    operator = "*";
+                    total = no1 * no2;
+                }
+                else if(whichButton.value == "/"){
+                    operator = "/";
+                    total = no1 / no2;
+                }
+                let resultStr = "Result is: " + no1 + " " + operator + " " + no2 + " = " + total;
+                document.getElementById("resultDiv").innerHTML = total;
+                document.getElementById("resultPara").innerHTML = resultStr;
+            }
+
+            function clearResult() {
+                document.getElementById("resultDiv").innerHTML = "";
+                document.getElementById("resultPara").innerHTML = "";
+            }
+            function showHideResultPara(btn){
+                if(btn.value == "Hide"){
+                    document.getElementById("resultPara").style.display = "none";
+                    btn.value = "Show";
+                }
+                else if(btn.value == "Show"){
+                    document.getElementById("resultPara").style.display = "block";
+                    btn.value = "Hide";
+                }
+            }
+        </script>
+    </head>
+    <body> 
+        <h1>Calculator Program</h1>
+        <hr>
+        No1: <input type="number" name="num1" id="no1" placeholder="Enter first number">  <br>
+        No2: <input type="number" name="num2" id="no2" placeholder="Enter second number"> <br>
+        <input type="submit" value="+" id="addButton" onmouseenter="calculate(this)">
+        <input type="submit" value="-" id="subButton" onmouseenter="calculate(this)">
+        <input type="submit" value="*" id="mulButton" onmouseenter="calculate(this)">
+        <input type="submit" value="/" id="divButton" onmouseenter="calculate(this)"><br>
+        <input type="submit" value="Clear" id="clearButton" onmouseenter="clearResult()"><br>
+        <input type="submit" value="Hide" id="hideButton" onclick="showHideResultPara(this)">
+        <div id="resultDiv">Result will be here..</div>
+        <p id="resultPara">Result will be here..</p>
+    </body>
+</html>
